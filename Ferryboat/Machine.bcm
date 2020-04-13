@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/Ferryboat/context.bcc" org.eventb.core.source="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.seesContext#("/>
+<org.eventb.core.scInternalContext name="context">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="nbDeck=3" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#+" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="nbCarDeck=10" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#-" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="widthElevator=2" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#." org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="axm4" org.eventb.core.predicate="heightElevator=3" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#\/" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="+" org.eventb.core.label="axm5" org.eventb.core.predicate="partition(states,{empty},{car},{smallTruck},{bigTruck},{dam})" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#0" org.eventb.core.theorem="true"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="true" name="bigTruck" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#4" org.eventb.core.type="states"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="car" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#2" org.eventb.core.type="states"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="dam" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#5" org.eventb.core.type="states"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="empty" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#1" org.eventb.core.type="states"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="true" name="heightElevator" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#)" org.eventb.core.type="ℤ"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="nbCarDeck" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#*" org.eventb.core.type="ℤ"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="nbDeck" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#," org.eventb.core.type="ℤ"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="smallTruck" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#3" org.eventb.core.type="states"/>
+<org.eventb.core.scCarrierSet name="states" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(states)"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="widthElevator" org.eventb.core.source="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#(" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInvariant name="contexu" org.eventb.core.label="inv1" org.eventb.core.predicate="freightElevator∈1 ‥ widthElevator × 1 ‥ heightElevator → states" org.eventb.core.source="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#*" org.eventb.core.theorem="false"/>
+<org.eventb.core.scVariable name="freightElevator" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.variable#)" org.eventb.core.type="ℙ(ℤ×ℤ×states)"/>
+<org.eventb.core.scEvent name="freightElevatos" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'">
+<org.eventb.core.scAction name="'" org.eventb.core.assignment="freightElevator ≔ 1 ‥ widthElevator × 1 ‥ heightElevator × {empty}" org.eventb.core.label="act1" org.eventb.core.source="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#'"/>
+</org.eventb.core.scEvent>
+</org.eventb.core.scMachineFile>
