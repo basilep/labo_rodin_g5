@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="STATES">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="heightElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="widthElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck})"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬smallTruck=mediumTruck"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬car=bigTruck"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬empty=smallTruck"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬empty=mediumTruck"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬mediumTruck=bigTruck"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬empty=car"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="STATES={empty,car,smallTruck,mediumTruck,bigTruck}"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬car=mediumTruck"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="1 ‥ widthElevator × 1 ‥ heightElevator × {empty}∈1 ‥ widthElevator × 1 ‥ heightElevator → STATES"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬car=smallTruck"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬smallTruck=bigTruck"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬empty=bigTruck"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="STATES">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p3,p5,p4,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="heightElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="nbCarDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="widthElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck})"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬smallTruck=mediumTruck"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬car=bigTruck"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbCarDeck=10"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬empty=smallTruck"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="1∈1 ‥ nbDeck"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="heightElevator=3"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬empty=mediumTruck"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬mediumTruck=bigTruck"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬empty=car"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="STATES={empty,car,smallTruck,mediumTruck,bigTruck}"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbDeck=3"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬car=mediumTruck"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬car=smallTruck"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬smallTruck=bigTruck"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬empty=bigTruck"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="widthElevator=2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UP/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="STATES">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p5,p10,p7,p4,p8,p9,p6,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="bridgeElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="freightElevator" org.eventb.core.type="ℙ(ℤ×ℤ×STATES)"/>
+<org.eventb.core.prIdent name="heightElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="nbCarDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="parking" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ×STATES)"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="widthElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="widthElevator≠0"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck})"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬smallTruck=mediumTruck"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="freightElevator∈1 ‥ widthElevator × 1 ‥ heightElevator → STATES"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬car=bigTruck"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬widthElevator=0"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nbCarDeck=10"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬empty=smallTruck"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="bridgeElevator&lt;nbDeck"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="heightElevator=3"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬empty=mediumTruck"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬mediumTruck=bigTruck"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬empty=car"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="STATES={empty,car,smallTruck,mediumTruck,bigTruck}"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbDeck=3"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="bridgeElevator+1∈1 ‥ nbDeck"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬car=mediumTruck"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬car=smallTruck"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬smallTruck=bigTruck"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="bridgeElevator∈1 ‥ nbDeck"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬empty=bigTruck"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="parking∈1 ‥ nbDeck × 1 ‥ nbCarDeck ÷ widthElevator × 1 ‥ widthElevator → STATES"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="widthElevator=2"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="DOWN/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="STATES">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p6,p10,p7,p5,p8,p9,p4,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="bridgeElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="freightElevator" org.eventb.core.type="ℙ(ℤ×ℤ×STATES)"/>
+<org.eventb.core.prIdent name="heightElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="nbCarDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="parking" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ×STATES)"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="widthElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="widthElevator≠0"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck})"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬smallTruck=mediumTruck"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="freightElevator∈1 ‥ widthElevator × 1 ‥ heightElevator → STATES"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬car=bigTruck"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬widthElevator=0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nbCarDeck=10"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬empty=smallTruck"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="heightElevator=3"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬empty=mediumTruck"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬mediumTruck=bigTruck"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="bridgeElevator − 1∈1 ‥ nbDeck"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬empty=car"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="STATES={empty,car,smallTruck,mediumTruck,bigTruck}"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbDeck=3"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="bridgeElevator&gt;1"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬car=mediumTruck"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬car=smallTruck"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬smallTruck=bigTruck"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="bridgeElevator∈1 ‥ nbDeck"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬empty=bigTruck"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="parking∈1 ‥ nbDeck × 1 ‥ nbCarDeck ÷ widthElevator × 1 ‥ widthElevator → STATES"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="widthElevator=2"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="inv3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7" org.eventb.core.prSets="STATES">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="p2,p4,p7,p5,p3,p6,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="bridgeElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="freightElevator" org.eventb.core.type="ℙ(ℤ×ℤ×STATES)"/>
+<org.eventb.core.prIdent name="heightElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="nbCarDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="widthElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="widthElevator≠0"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck})"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬smallTruck=mediumTruck"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="freightElevator∈1 ‥ widthElevator × 1 ‥ heightElevator → STATES"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬car=bigTruck"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬widthElevator=0"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbCarDeck=10"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬empty=smallTruck"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="heightElevator=3"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬empty=mediumTruck"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬mediumTruck=bigTruck"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬empty=car"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="STATES={empty,car,smallTruck,mediumTruck,bigTruck}"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbDeck=3"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬car=mediumTruck"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬car=smallTruck"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬smallTruck=bigTruck"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="bridgeElevator∈1 ‥ nbDeck"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬empty=bigTruck"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="widthElevator=2"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck})">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬smallTruck=mediumTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="widthElevator≠0">
+<org.eventb.core.prIdent name="widthElevator" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬car=bigTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬widthElevator=0">
+<org.eventb.core.prIdent name="widthElevator" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬empty=smallTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬empty=mediumTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬mediumTruck=bigTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬empty=car">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="STATES={empty,car,smallTruck,mediumTruck,bigTruck}">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬car=mediumTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬car=smallTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬smallTruck=bigTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬empty=bigTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="STATES">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="p2,p3,p5,p4,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="heightElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="nbCarDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="widthElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="widthElevator≠0"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck})"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬smallTruck=mediumTruck"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬car=bigTruck"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬widthElevator=0"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbCarDeck=10"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬empty=smallTruck"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="heightElevator=3"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬empty=mediumTruck"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬mediumTruck=bigTruck"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬empty=car"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="STATES={empty,car,smallTruck,mediumTruck,bigTruck}"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbDeck=3"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬car=mediumTruck"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬car=smallTruck"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬smallTruck=bigTruck"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬empty=bigTruck"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="widthElevator=2"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="UP/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck})">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬smallTruck=mediumTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="widthElevator≠0">
+<org.eventb.core.prIdent name="widthElevator" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬car=bigTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬widthElevator=0">
+<org.eventb.core.prIdent name="widthElevator" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬empty=smallTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬empty=mediumTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬mediumTruck=bigTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬empty=car">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="STATES={empty,car,smallTruck,mediumTruck,bigTruck}">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬car=mediumTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="mediumTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬car=smallTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬smallTruck=bigTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="smallTruck" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬empty=bigTruck">
+<org.eventb.core.prIdent name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.prIdent name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.prIdent name="empty" org.eventb.core.type="STATES"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>
