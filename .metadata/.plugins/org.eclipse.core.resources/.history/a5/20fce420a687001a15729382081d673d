@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="typeVehicule" org.eventb.core.type="ℙ(typeVehicule)"/>
+<org.eventb.core.poIdentifier name="grandCamion" org.eventb.core.type="typeVehicule"/>
+<org.eventb.core.poIdentifier name="moyenCamion" org.eventb.core.type="typeVehicule"/>
+<org.eventb.core.poIdentifier name="petitCamion" org.eventb.core.type="typeVehicule"/>
+<org.eventb.core.poIdentifier name="voiture" org.eventb.core.type="typeVehicule"/>
+<org.eventb.core.poPredicate name="typeVehiculf" org.eventb.core.predicate="partition(typeVehicule,{voiture},{grandCamion},{petitCamion},{moyenCamion})" org.eventb.core.source="/Files/Values.buc|org.eventb.core.contextFile#Values|org.eventb.core.axiom#,"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Files/FileAttente.bpo|org.eventb.core.poFile#FileAttente|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPValuet" org.eventb.core.parentSet="/Files/FileAttente.bpo|org.eventb.core.poFile#FileAttente|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Files/FileAttente.bpo|org.eventb.core.poFile#FileAttente|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1"/>
+</org.eventb.core.poFile>

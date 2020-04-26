@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.variable name="(" org.eventb.core.identifier="queueLeft"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="queueRight"/>
+<org.eventb.core.variable name="*" org.eventb.core.identifier="urgenceExit"/>
+<org.eventb.core.invariant name="+" org.eventb.core.label="inv1" org.eventb.core.predicate="queueLeft ∈ (1‥nbVehicule × 3) → state"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="queueRight ∈ (1‥nbVehicule × 3) → state"/>
+<org.eventb.core.invariant name="-" org.eventb.core.label="inv3" org.eventb.core.predicate="urgenceExit ∈ (1‥nbVehicule × 3) → state"/>
+</org.eventb.core.machineFile>
