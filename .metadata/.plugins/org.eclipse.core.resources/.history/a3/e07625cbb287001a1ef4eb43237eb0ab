@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.poIdentifier name="bigTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.poIdentifier name="car" org.eventb.core.type="STATES"/>
+<org.eventb.core.poIdentifier name="empty" org.eventb.core.type="STATES"/>
+<org.eventb.core.poIdentifier name="heightElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="mediumTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.poIdentifier name="nbCarDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nbDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="smallTruck" org.eventb.core.type="STATES"/>
+<org.eventb.core.poIdentifier name="widthElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="heightElevatos" org.eventb.core.predicate="nbDeck=3" org.eventb.core.source="/rodinIsBest/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#1"/>
+<org.eventb.core.poPredicate name="heightElevatot" org.eventb.core.predicate="nbCarDeck=10" org.eventb.core.source="/rodinIsBest/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="heightElevatou" org.eventb.core.predicate="widthElevator=2" org.eventb.core.source="/rodinIsBest/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#3"/>
+<org.eventb.core.poPredicate name="heightElevatov" org.eventb.core.predicate="heightElevator=3" org.eventb.core.source="/rodinIsBest/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="heightElevatow" org.eventb.core.predicate="partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck})" org.eventb.core.source="/rodinIsBest/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#5"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="15">
+<org.eventb.core.poIdentifier name="fenceLeft" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="fenceRight" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="queueExit" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="queueLeft" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="queueRight" org.eventb.core.type="ℙ(ℤ×ℤ×STATES)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="inv1/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#ABSHYP"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="queueLeft∈1 ‥ nbCarDeck∗nbDeck × 1 ‥ 3 → ℕ" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#,"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#,"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#ABSHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#EVTALLHYPqueueRighu"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1 ‥ nbCarDeck∗nbDeck × 1 ‥ 3 × {empty}∈1 ‥ nbCarDeck∗nbDeck × 1 ‥ 3 → STATES" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#."/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#EVTALLHYPqueueRighu"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="queueExit'∈1 ‥ nbCarDeck∗nbDeck × 1 ‥ 3 → ℕ" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#\/"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#\/"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTqueueRighu" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="15">
+<org.eventb.core.poIdentifier name="fenceLeft'" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="fenceRight'" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="queueRight'" org.eventb.core.type="ℙ(ℤ×ℤ×STATES)"/>
+<org.eventb.core.poIdentifier name="queueExit'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="queueLeft'" org.eventb.core.type="ℙ(ℤ×ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPqueueRighu" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#EVTIDENTqueueRighu" org.eventb.core.poStamp="15"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTqueueRighv" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="15">
+<org.eventb.core.poIdentifier name="fenceRight'" org.eventb.core.type="BOOL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPqueueRighv" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#EVTIDENTqueueRighv" org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="fenceRight=FALSE" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.event#-|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTqueueRighw" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="15">
+<org.eventb.core.poIdentifier name="fenceRight'" org.eventb.core.type="BOOL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPqueueRighw" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#EVTIDENTqueueRighw" org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="fenceRight=TRUE" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.event#4|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTqueueRighx" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="15">
+<org.eventb.core.poIdentifier name="fenceLeft'" org.eventb.core.type="BOOL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPqueueRighx" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#EVTIDENTqueueRighx" org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="fenceLeft=FALSE" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.event#5|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTqueueRighy" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="15">
+<org.eventb.core.poIdentifier name="fenceLeft'" org.eventb.core.type="BOOL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPqueueRighy" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#EVTIDENTqueueRighy" org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="fenceLeft=TRUE" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.event#6|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/rodinIsBest/Queue.bpo|org.eventb.core.poFile#Queue|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="15">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="queueLeft∈1 ‥ nbCarDeck∗nbDeck × 1 ‥ 3 → ℕ" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#,"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="queueRight∈1 ‥ nbCarDeck∗nbDeck × 1 ‥ 3 → STATES" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#."/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="queueExit∈1 ‥ nbCarDeck∗nbDeck × 1 ‥ 3 → ℕ" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#\/"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="fenceLeft∈BOOL" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#2"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="fenceRight∈BOOL" org.eventb.core.source="/rodinIsBest/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#3"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

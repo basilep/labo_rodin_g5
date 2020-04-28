@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(responses,{yay},{nope})" org.eventb.core.source="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="nope" org.eventb.core.source="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#(" org.eventb.core.type="responses"/>
+<org.eventb.core.scCarrierSet name="responses" org.eventb.core.source="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.carrierSet#)" org.eventb.core.type="ℙ(responses)"/>
+<org.eventb.core.scConstant name="yay" org.eventb.core.source="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#'" org.eventb.core.type="responses"/>
+</org.eventb.core.scContextFile>

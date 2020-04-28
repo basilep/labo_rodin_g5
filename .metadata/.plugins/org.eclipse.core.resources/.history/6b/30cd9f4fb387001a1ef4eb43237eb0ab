@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.constant name="'" org.eventb.core.identifier="widthElevator"/>
+<org.eventb.core.constant name="(" org.eventb.core.identifier="heightElevator"/>
+<org.eventb.core.constant name=")" org.eventb.core.identifier="nbCarDeck"/>
+<org.eventb.core.constant name="*" org.eventb.core.identifier="nbDeck"/>
+<org.eventb.core.constant name="+" org.eventb.core.identifier="empty"/>
+<org.eventb.core.constant name="," org.eventb.core.identifier="car"/>
+<org.eventb.core.constant name="-" org.eventb.core.identifier="smallTruck"/>
+<org.eventb.core.constant name="." org.eventb.core.identifier="mediumTruck"/>
+<org.eventb.core.constant name="/" org.eventb.core.identifier="bigTruck"/>
+<org.eventb.core.carrierSet name="0" org.eventb.core.identifier="STATES"/>
+<org.eventb.core.axiom name="1" org.eventb.core.label="axm1" org.eventb.core.predicate="nbDeck = 3"/>
+<org.eventb.core.axiom name="2" org.eventb.core.label="axm2" org.eventb.core.predicate="nbCarDeck = 10"/>
+<org.eventb.core.axiom name="3" org.eventb.core.label="axm3" org.eventb.core.predicate="widthElevator = 2"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="axm4" org.eventb.core.predicate="heightElevator = 3"/>
+<org.eventb.core.axiom name="5" org.eventb.core.label="axm5" org.eventb.core.predicate="partition(STATES,{empty},{car},{smallTruck},{mediumTruck},{bigTruck})"/>
+</org.eventb.core.contextFile>

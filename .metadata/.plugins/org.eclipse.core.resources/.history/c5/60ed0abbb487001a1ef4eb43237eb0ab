@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="STATES" org.eventb.core.type="ℙ(STATES)"/>
+<org.eventb.core.poIdentifier name="ID" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="heightElevator" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nbCarDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nbDeck" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="widthElevator" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/rodinIsBest/context.bpo|org.eventb.core.poFile#context|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="nbDeck=3" org.eventb.core.source="/rodinIsBest/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#1"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="nbCarDeck=10" org.eventb.core.source="/rodinIsBest/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="widthElevator=2" org.eventb.core.source="/rodinIsBest/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#3"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="heightElevator=3" org.eventb.core.source="/rodinIsBest/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="ID∈ℕ" org.eventb.core.source="/rodinIsBest/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#7"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

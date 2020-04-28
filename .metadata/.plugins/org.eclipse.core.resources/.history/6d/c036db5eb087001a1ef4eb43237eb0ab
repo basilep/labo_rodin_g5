@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/test/ctx.bcc" org.eventb.core.source="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.seesContext#)"/>
+<org.eventb.core.scInternalContext name="ctx">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(responses,{yay},{nope})" org.eventb.core.source="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="nope" org.eventb.core.source="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#(" org.eventb.core.type="responses"/>
+<org.eventb.core.scCarrierSet name="responses" org.eventb.core.source="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.carrierSet#)" org.eventb.core.type="ℙ(responses)"/>
+<org.eventb.core.scConstant name="yay" org.eventb.core.source="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#'" org.eventb.core.type="responses"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInvariant name="cty" org.eventb.core.label="inv1" org.eventb.core.predicate="answer∈{yay}" org.eventb.core.source="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.invariant#*" org.eventb.core.theorem="false"/>
+<org.eventb.core.scVariable name="answer" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.variable#(" org.eventb.core.type="responses"/>
+<org.eventb.core.scEvent name="answes" org.eventb.core.accurate="false" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.event#'">
+<org.eventb.core.scAction name="'" org.eventb.core.assignment="answer :∣ ⊤" org.eventb.core.label="GEN" org.eventb.core.source="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.event#'"/>
+</org.eventb.core.scEvent>
+</org.eventb.core.scMachineFile>

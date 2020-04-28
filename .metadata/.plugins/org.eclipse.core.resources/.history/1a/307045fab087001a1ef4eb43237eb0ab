@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="queueLeft ≔ (1‥(nbCarDeck∗nbDeck) × 1‥3 × {empty})" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="queueRight ≔ (1‥(nbCarDeck∗nbDeck) × 1‥3 × {empty})" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="queueExit ≔ (1‥(nbCarDeck∗nbDeck) × 1‥3 × {empty})" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="(" org.eventb.core.identifier="queueLeft"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="queueRight"/>
+<org.eventb.core.variable name="*" org.eventb.core.identifier="queueExit"/>
+<org.eventb.core.seesContext name="+" org.eventb.core.target="context"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="inv1" org.eventb.core.predicate="queueLeft ∈ (1‥(nbCarDeck∗nbDeck) × 1‥3) → STATES"/>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="evt1"/>
+<org.eventb.core.invariant name="." org.eventb.core.label="inv2" org.eventb.core.predicate="queueRight ∈ (1‥(nbCarDeck∗nbDeck) × 1‥3) → STATES"/>
+<org.eventb.core.invariant name="/" org.eventb.core.label="inv3" org.eventb.core.predicate="queueExit ∈ (1‥(nbCarDeck∗nbDeck) × 1‥3) → STATES"/>
+<org.eventb.core.variable name="0" org.eventb.core.identifier="fenceLeft"/>
+<org.eventb.core.variable name="1" org.eventb.core.identifier="fenceRight"/>
+<org.eventb.core.invariant name="2" org.eventb.core.label="inv4" org.eventb.core.predicate="fenceLeft ∈ BOOL"/>
+<org.eventb.core.invariant name="3" org.eventb.core.label="inv5" org.eventb.core.predicate="fenceRight ∈ BOOL "/>
+</org.eventb.core.machineFile>

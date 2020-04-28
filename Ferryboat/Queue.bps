@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="inv1/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="33" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="35" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="35" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="fenceRightUp/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="38" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="fenceRightUp/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="38" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="fenceLeftUp/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="39" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="fenceLeftUp/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="39" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

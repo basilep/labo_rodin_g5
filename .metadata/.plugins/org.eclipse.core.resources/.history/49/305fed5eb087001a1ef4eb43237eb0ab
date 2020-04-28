@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="responses" org.eventb.core.type="ℙ(responses)"/>
+<org.eventb.core.poIdentifier name="nope" org.eventb.core.type="responses"/>
+<org.eventb.core.poIdentifier name="yay" org.eventb.core.type="responses"/>
+<org.eventb.core.poPredicate name="responset" org.eventb.core.predicate="partition(responses,{yay},{nope})" org.eventb.core.source="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/test/ask_test.bpo|org.eventb.core.poFile#ask_test|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="answer" org.eventb.core.type="responses"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/test/ask_test.bpo|org.eventb.core.poFile#ask_test|org.eventb.core.poPredicateSet#EVTALLHYPanswes"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="answer'∈{yay}" org.eventb.core.source="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.invariant#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.invariant#*"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/test/ask_test.bpo|org.eventb.core.poFile#ask_test|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/test/ask_test.bpo|org.eventb.core.poFile#ask_test|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/test/ask_test.bpo|org.eventb.core.poFile#ask_test|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTanswes" org.eventb.core.parentSet="/test/ask_test.bpo|org.eventb.core.poFile#ask_test|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="answer'" org.eventb.core.type="responses"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPanswes" org.eventb.core.parentSet="/test/ask_test.bpo|org.eventb.core.poFile#ask_test|org.eventb.core.poPredicateSet#EVTIDENTanswes" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/test/ask_test.bpo|org.eventb.core.poFile#ask_test|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="answer∈{yay}" org.eventb.core.source="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.invariant#*"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

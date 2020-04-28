@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<index_root>
+<pim project="/Ferryboat">
+<rodin_index>
+<descriptor element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#," name="nbDeck">
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#," kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#+" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="6" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#*" name="nbCarDeck">
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#*" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#-" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="9" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#7" name="widthElevator">
+<occurrence element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="35" loc_char_start="22"/>
+<occurrence element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="34" loc_char_start="21"/>
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#7" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="13" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#(" name="queueLeft">
+<occurrence element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#(" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#+" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="9" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#5" name="mediumTruck">
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#5" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#0" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="56" loc_char_start="45"/>
+</descriptor>
+<descriptor element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#*" name="urgenceExit">
+<occurrence element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#*" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#-" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#3" name="smallTruck">
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#3" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#0" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="42" loc_char_start="32"/>
+</descriptor>
+<descriptor element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#1" name="empty">
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#0" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="23" loc_char_start="18"/>
+<occurrence element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="64" loc_char_start="59"/>
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#1" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/Ferryboat/context.buc|org.eventb.core.contextFile#context" name="context">
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context" kind="org.eventb.core.declaration"/>
+<occurrence element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.seesContext#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#0" name="fenceRight">
+<occurrence element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#0" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#1" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="10" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'" name="INITIALISATION">
+<occurrence element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#)" name="heightElevator">
+<occurrence element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="53" loc_char_start="39"/>
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#\/" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="14" loc_char_start="0"/>
+<occurrence element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="54" loc_char_start="40"/>
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#)" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.variable#)" name="freightElevator">
+<occurrence element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.variable#)" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="15" loc_char_start="0"/>
+<occurrence element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#'" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="15" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.carrierSet#'" name="states">
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#0" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="16" loc_char_start="10"/>
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.carrierSet#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="63" loc_char_start="57"/>
+</descriptor>
+<descriptor element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.event#'" name="INITIALISATION">
+<occurrence element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.event#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#)" name="queueRight">
+<occurrence element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#)" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="10" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#6" name="bigTruck">
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#0" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="67" loc_char_start="59"/>
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#6" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine" name="Machine">
+<occurrence element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine" kind="org.eventb.core.declaration"/>
+</descriptor>
+<descriptor element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#2" name="car">
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#2" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.axiom#0" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="29" loc_char_start="26"/>
+</descriptor>
+<descriptor element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#\/" name="fenceLeft">
+<occurrence element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.invariant#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="9" loc_char_start="0"/>
+<occurrence element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#\/" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue" name="Queue">
+<occurrence element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue" kind="org.eventb.core.declaration"/>
+</descriptor>
+</rodin_index>
+<export_table>
+<export file="/Ferryboat/Machine.bum">
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#7" name="widthElevator"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#5" name="mediumTruck"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#2" name="car"/>
+<exported element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine" name="Machine"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#1" name="empty"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#3" name="smallTruck"/>
+<exported element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.variable#)" name="freightElevator"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#," name="nbDeck"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#*" name="nbCarDeck"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context" name="context"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#6" name="bigTruck"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.carrierSet#'" name="states"/>
+<exported element="/Ferryboat/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'" name="INITIALISATION"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#)" name="heightElevator"/>
+</export>
+<export file="/Ferryboat/context.buc">
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#*" name="nbCarDeck"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context" name="context"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#7" name="widthElevator"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#5" name="mediumTruck"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#2" name="car"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#6" name="bigTruck"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.carrierSet#'" name="states"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#1" name="empty"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#3" name="smallTruck"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#)" name="heightElevator"/>
+<exported element="/Ferryboat/context.buc|org.eventb.core.contextFile#context|org.eventb.core.constant#," name="nbDeck"/>
+</export>
+<export file="/Ferryboat/Queue.bum">
+<exported element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#(" name="queueLeft"/>
+<exported element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#)" name="queueRight"/>
+<exported element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#*" name="urgenceExit"/>
+<exported element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#0" name="fenceRight"/>
+<exported element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.event#'" name="INITIALISATION"/>
+<exported element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue" name="Queue"/>
+<exported element="/Ferryboat/Queue.bum|org.eventb.core.machineFile#Queue|org.eventb.core.variable#\/" name="fenceLeft"/>
+</export>
+</export_table>
+<graph is_sorted="true">
+<node label="/Ferryboat/context.buc" mark="false" order_pos="0"/>
+<node label="/Ferryboat/Queue.bum" mark="false" order_pos="1"/>
+<node label="/Ferryboat/Machine.bum" mark="false" order_pos="2">
+<predecessor label="/Ferryboat/context.buc"/>
+</node>
+</graph>
+<unprocessed file="/Ferryboat/Machine.bcm"/>
+<unprocessed file="/Ferryboat/Machine.bpo"/>
+<unprocessed file="/Ferryboat/Machine.bpr"/>
+<unprocessed file="/Ferryboat/Machine.bps"/>
+<unprocessed file="/Ferryboat/context.bcc"/>
+<unprocessed file="/Ferryboat/context.bpo"/>
+<unprocessed file="/Ferryboat/context.bpr"/>
+<unprocessed file="/Ferryboat/context.bps"/>
+</pim>
+<pim project="/test">
+<rodin_index>
+<descriptor element="/test/ask_test.bum|org.eventb.core.machineFile#ask_test" name="ask_test">
+<occurrence element="/test/ask_test.bum|org.eventb.core.machineFile#ask_test" kind="org.eventb.core.declaration"/>
+</descriptor>
+<descriptor element="/test/ctx.buc|org.eventb.core.contextFile#ctx" name="ctx">
+<occurrence element="/test/ctx.buc|org.eventb.core.contextFile#ctx" kind="org.eventb.core.declaration"/>
+<occurrence element="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.seesContext#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.carrierSet#)" name="responses">
+<occurrence element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.carrierSet#)" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="19" loc_char_start="10"/>
+</descriptor>
+<descriptor element="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.event#'" name="INITIALISATION">
+<occurrence element="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.event#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.variable#(" name="answer">
+<occurrence element="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.variable#(" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.invariant#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="6" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#'" name="yay">
+<occurrence element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="24" loc_char_start="21"/>
+<occurrence element="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.invariant#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="13" loc_char_start="10"/>
+</descriptor>
+<descriptor element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#(" name="nope">
+<occurrence element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="31" loc_char_start="27"/>
+<occurrence element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#(" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+</rodin_index>
+<export_table>
+<export file="/test/ask_test.bum">
+<exported element="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.event#'" name="INITIALISATION"/>
+<exported element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.carrierSet#)" name="responses"/>
+<exported element="/test/ask_test.bum|org.eventb.core.machineFile#ask_test" name="ask_test"/>
+<exported element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#'" name="yay"/>
+<exported element="/test/ask_test.bum|org.eventb.core.machineFile#ask_test|org.eventb.core.variable#(" name="answer"/>
+<exported element="/test/ctx.buc|org.eventb.core.contextFile#ctx" name="ctx"/>
+<exported element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#(" name="nope"/>
+</export>
+<export file="/test/ctx.buc">
+<exported element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.carrierSet#)" name="responses"/>
+<exported element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#'" name="yay"/>
+<exported element="/test/ctx.buc|org.eventb.core.contextFile#ctx" name="ctx"/>
+<exported element="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.constant#(" name="nope"/>
+</export>
+</export_table>
+<graph is_sorted="true">
+<node label="/test/ctx.buc" mark="false" order_pos="0"/>
+<node label="/test/ask_test.bum" mark="false" order_pos="1">
+<predecessor label="/test/ctx.buc"/>
+</node>
+</graph>
+<unprocessed file="/test/ask_test.bcm"/>
+<unprocessed file="/test/ask_test.bpo"/>
+<unprocessed file="/test/ask_test.bpr"/>
+<unprocessed file="/test/ask_test.bps"/>
+<unprocessed file="/test/ctx.bcc"/>
+<unprocessed file="/test/ctx.bpo"/>
+<unprocessed file="/test/ctx.bpr"/>
+<unprocessed file="/test/ctx.bps"/>
+<unprocessed file="/test/ctx.bpo_tmp"/>
+</pim>
+<delta_list/>
+<indexer_registry>
+<registry_entry element_type="org.eventb.core.machineFile">
+<indexer id="machineIndexer"/>
+</registry_entry>
+<registry_entry element_type="org.eventb.core.contextFile">
+<indexer id="contextIndexer"/>
+</registry_entry>
+</indexer_registry>
+</index_root>

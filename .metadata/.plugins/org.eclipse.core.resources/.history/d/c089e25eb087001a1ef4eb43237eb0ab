@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="responses" org.eventb.core.type="ℙ(responses)"/>
+<org.eventb.core.poIdentifier name="nope" org.eventb.core.type="responses"/>
+<org.eventb.core.poIdentifier name="yay" org.eventb.core.type="responses"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/test/ctx.bpo|org.eventb.core.poFile#ctx|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(responses,{yay},{nope})" org.eventb.core.source="/test/ctx.buc|org.eventb.core.contextFile#ctx|org.eventb.core.axiom#*"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
